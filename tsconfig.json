@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // Typings
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Modules
+    "target": "ES2022",
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+
+    // Emit
+    "rootDir": "./src/",
+    "outDir": "./dist/",
+    "strict": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "typeRoots": ["./node_modules/@types", "./src/environment.d.ts"],
+    "sourceMap": false,
+    "baseUrl": "./"
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["dist"]
+}
